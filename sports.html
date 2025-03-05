@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I enjoysoccer, women's college volleyball and mountain biking</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f0ff;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            color: #4a4a8a;
+            overflow: auto;
+            position: relative;
+        }
+        h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(74, 74, 138, 0.3);
+        }
+        section {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 15px;
+            width: 80%;
+            box-shadow: 4px 4px 10px rgba(74, 74, 138, 0.2);
+        }
+        img {
+            width: 80%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background: #b6a7d2;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+        }
+        /* Floating Stars Animation */
+        .star {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: floatStars linear infinite;
+        }
+        @keyframes floatStars {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-100vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function createStars() {
+            const numStars = 50;
+            for (let i = 0; i < numStars; i++) {
+                let star = document.createElement("div");
+                star.className = "star";
+                document.body.appendChild(star);
+                star.style.left = Math.random() * window.innerWidth + "px";
+                star.style.top = Math.random() * window.innerHeight + "px";
+                star.style.animationDuration = (Math.random() * 3 + 2) + "s";
+            }
+        }
+        window.onload = createStars;
+    </script>
+    <h1>Sports & Sparkles</h1>
+    
+    <section>
+        <h2>Best European Soccer Teams</h2>
+        <ul>
+            <li><a href="https://www.realmadrid.com" target="_blank">Real Madrid</a></li>
+            <li><a href="https://www.fcbarcelona.com" target="_blank">FC Barcelona</a></li>
+            <li><a href="https://www.mancity.com" target="_blank">Manchester City</a></li>
+            <li><a href="https://fcbayern.com" target="_blank">Bayern Munich</a></li>
+            <li><a href="https://en.psg.fr" target="_blank">Paris Saint-Germain</a></li>
+            <li><a href="https://www.liverpoolfc.com" target="_blank">Liverpool</a></li>
+            <li><a href="https://www.juventus.com" target="_blank">Juventus</a></li>
+        </ul>
+    </section>
+    
+
+    <section>
+        <h2>Women's College Volleyball</h2>
+        <p>Great games btw</p>
+        <ul>
+            <li><a href="https://huskers.com/sports/womens-volleyball" target="_blank">Nebraska Huskers</a></li>
+            <li><a href="https://texassports.com/sports/womens-volleyball" target="_blank">Texas Longhorns</a></li>
+            <li><a href="https://uwbadgers.com/sports/womens-volleyball" target="_blank">Wisconsin Badgers</a></li>
+            <li><a href="https://gostanford.com/sports/womens-volleyball" target="_blank">Stanford Cardinal</a></li>
+            <li><a href="https://gopsusports.com/sports/womens-volleyball" target="_blank">Penn State Nittany Lions</a></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Mountain Bike Racing</h2>
+        <p>Speed, endurance, and adventure!</p>
+        <ul>
+            <li><a href="https://www.uci.org/mountain-bike/" target="_blank">UCI Mountain Bike World Cup</a></li>
+            <li><a href="https://www.redbull.com/int-en/events/rampage" target="_blank">Red Bull Rampage</a></li>
+            <li><a href="https://www.enduroworldseries.com/" target="_blank">Enduro World Series</a></li>
+            <li><a href="https://www.uci.org/mountain-bike/" target="_blank">Downhill World Championships</a></li>
+        </ul>
+    </section>
+</body>
+</html>
